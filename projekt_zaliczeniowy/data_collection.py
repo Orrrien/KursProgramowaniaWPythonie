@@ -111,9 +111,9 @@ bus_route_url = 'https://api.um.warszawa.pl/api/action/public_transport_routes/?
 bus_stop_url = 'https://api.um.warszawa.pl/api/action/busestrams_get/?'
 bus_stop_location_url = 'https://api.um.warszawa.pl/api/action/dbstore_get/?ab75c33d-3a26-4342-b36a-6e5fef0a3ac3'
 
-#bus_positions = get_bus_location(bus_pos_url, api_key)
-#bus_positions2 = get_bus_location(bus_pos_url, api_key)
-#bus_route = get_bus_route(bus_route_url, api_key)
+bus_positions = get_bus_location(bus_pos_url, api_key)
+bus_positions2 = get_bus_location(bus_pos_url, api_key)
+bus_route = get_bus_route(bus_route_url, api_key)
 bus_stop_location = get_bus_stop_location(bus_stop_url, api_key)
 
 filename = 'bus_positions.json'
@@ -132,19 +132,19 @@ bus_route_filename = 'bus_route.json'
 bus_route_clean_filename = 'bus_route_clean.json'
 bus_stop_location_filename = 'bus_stop_location.json'
 
-#save_to_json(bus_route, bus_route_filename)
-#clean_route_file(bus_route_filename, bus_route_clean_filename)
+save_to_json(bus_route, bus_route_filename)
+clean_route_file(bus_route_filename, bus_route_clean_filename)
 
-#save_to_json(bus_stop_location, bus_stop_location_filename)
+save_to_json(bus_stop_location, bus_stop_location_filename)
 
-#save_to_json(bus_positions, filename)
-#save_to_json(bus_positions2, filename2)
+save_to_json(bus_positions, filename)
+save_to_json(bus_positions2, filename2)
 
-#clean_file(filename, result_filename)
-#divide_by_vehicle(result_filename, sorted_filename, start_hour)
+clean_file(filename, result_filename)
+divide_by_vehicle(result_filename, sorted_filename, start_hour)
 
-#clean_file(filename2, result_filename2)
-#divide_by_vehicle(result_filename2, sorted_filename2, start_hour2)
+clean_file(filename2, result_filename2)
+divide_by_vehicle(result_filename2, sorted_filename2, start_hour2)
 
 
 
