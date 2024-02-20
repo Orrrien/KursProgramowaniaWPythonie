@@ -157,3 +157,6 @@ speeding2 = tup2[0]
 point_list2 = tup2[1]
 slow2 = tup2[2]
 all_buses2 = number_of_buses(filename2)
+
+point_list_sorted1 = sorted(point_list1, key=lambda x: x[1], reverse=True)
+point_list_sorted2 = sorted(point_list2, key=lambda x: x[1], reverse=True)
