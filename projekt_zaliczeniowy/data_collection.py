@@ -105,7 +105,6 @@ def divide_by_vehicle(result_file, sorted_filename, start_hour):
 
 
 
-api_key = 'e44d6e67-41b1-4e29-afb5-02ca18deb69c'
 bus_pos_url = 'https://api.um.warszawa.pl/api/action/busestrams_get/?'
 bus_route_url = 'https://api.um.warszawa.pl/api/action/public_transport_routes/?'
 bus_stop_url = 'https://api.um.warszawa.pl/api/action/busestrams_get/?'
